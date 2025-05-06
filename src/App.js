@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./index.css";
 import {
@@ -10,7 +9,6 @@ import {
   FaCode,
 } from "react-icons/fa";
 import {
-  SiOpenai,
   SiKubernetes,
   SiAmazonaws,
   SiDocker,
@@ -33,47 +31,37 @@ function App() {
           <img
             src="/profile.jpg"
             alt="Ikmal Shafiq"
-            className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mb-4 border-4 border-white-500 shadow-lg hover:shadow-white-500/50 transition-all duration-300 object-cover"
+            className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mb-4 border-4 border-purple-500 shadow-lg hover:shadow-purple-500/50 transition-all duration-300 object-cover"
           />
           <h2 className="text-2xl font-semibold mb-1">Ikmal Shafiq</h2>
           <p className="text-gray-400 mb-2">DevOps Consultant</p>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-4 mb-4">
-            <a
-              href="https://linkedin.com/in/ikmal-shafiq-107666257"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400"
-            >
+            <a href="https://linkedin.com/in/ikmal-shafiq-107666257" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
               <FaLinkedin size={24} />
             </a>
-            <a
-              href="https://github.com/maltrbl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400"
-            >
+            <a href="https://github.com/maltrbl" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
               <FaGithub size={24} />
             </a>
           </div>
 
-          <p className="text-gray-300 max-w-xl text-sm sm:text-base px-2">
+          <p className="text-gray-400 max-w-xl text-sm sm:text-base px-2">
             I’m currently working as a DevOps and AI Consultant at{" "}
-            <span className="text-red-500 font-medium">Virtuosity Solutions</span>, building intelligent agents,
+            <span className="text-white font-medium">Virtuosity Solutions</span>, building intelligent agents,
             designing prompts, and integrating AI into enterprise systems.
           </p>
         </section>
 
         {/* Projects */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4 text-white-300 text-center sm:text-left">Projects</h2>
-          <div className="text-left text-gray-300 space-y-6">
-            <div className="hover:scale-[1.02] transition transform duration-300 ease-in-out">
-              <strong className="flex items-center gap-2">
+          <h2 className="text-2xl font-semibold mb-4 text-center border-b border-purple-500 pb-1">Projects</h2>
+          <div className="text-left text-gray-400 space-y-6">
+            <div className="hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <strong className="flex items-center gap-2 text-white">
                 <FaRobot className="text-purple-400" /> Leave Management Agent (Coming Soon)
               </strong>
-              <p className="text-sm mt-1 text-gray-400">
+              <p className="text-sm mt-1">
                 • Automates leave requests, approvals, and record tracking using a streamlined workflow.<br />
                 • Tools used: Kubernetes, Docker, n8n, Streamlit.
               </p>
@@ -83,9 +71,9 @@ function App() {
 
         {/* Experience */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white-300 mb-4 text-center sm:text-left">Experience</h2>
-          <div className="text-left text-gray-300 space-y-6 max-w-xl text-sm sm:text-base">
-          {[
+          <h2 className="text-2xl font-semibold mb-4 text-center border-b border-purple-500 pb-1">Experience</h2>
+          <div className="text-left text-gray-400 space-y-6 max-w-xl text-sm sm:text-base">
+            {[
               {
                 title: "Associate DevOps & AI Consultant",
                 company: "Virtuosity Solutions Sdn. Bhd.",
@@ -94,7 +82,7 @@ function App() {
                   "Building enterprise-ready AI agents and automation workflows using Large Language Models (LLMs).",
                   "Designing and refining prompt engineering strategies for client-specific use cases.",
                   "Automating infrastructure using Ansible, Kafka, and container-based solutions.",
-                  "Supporting hybrid cloud environments and DevOps pipelines using tools like GitHub Actions, Jenkins, and Kubernetes."
+                  "Supporting hybrid cloud environments and DevOps pipelines using GitHub Actions, Jenkins, and Kubernetes."
                 ]
               },
               {
@@ -108,20 +96,15 @@ function App() {
                 ]
               }
             ].map((job, index) => (
-              <div
-                key={index}
-                className="hover:scale-[1.02] transition-transform duration-300 ease-in-out px-2 py-2 rounded-md"
-              >
-                <strong>{job.title}</strong><br />
-                <span className="text-white">{job.company}</span><br />
+              <div key={index} className="hover:scale-[1.02] transition-transform duration-300 ease-in-out px-2 py-2 rounded-md">
+                <strong className="text-white">{job.title}</strong><br />
+                <span>{job.company}</span><br />
                 <span className="text-sm text-gray-500">{job.time}</span>
-                {job.desc.length > 0 && (
-                  <ul className="list-disc list-inside mt-2 text-sm text-gray-400">
-                    {job.desc.map((line, i) => (
-                      <li key={i}>{line}</li>
-                    ))}
-                  </ul>
-                )}
+                <ul className="list-disc list-inside mt-2">
+                  {job.desc.map((line, i) => (
+                    <li key={i}>{line}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -129,9 +112,9 @@ function App() {
 
         {/* Skills */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-indigo-300 mb-4 text-center sm:text-left">Skills</h2>
-          <div className="text-left text-gray-300 space-y-6 max-w-xl text-sm sm:text-base">
-          {[
+          <h2 className="text-2xl font-semibold mb-4 text-center border-b border-purple-500 pb-1">Skills</h2>
+          <div className="text-left text-gray-400 space-y-2 text-sm leading-relaxed max-w-xl">
+            {[
               [<FaBrain className="text-purple-400" />, "Large Language Models (LLM)"],
               [<FaBrain className="text-purple-400" />, "Generative AI"],
               [<FaCode className="text-purple-400" />, "Prompt Engineering & Prompt Design"],
@@ -144,12 +127,9 @@ function App() {
               [<SiGrafana className="text-purple-400" />, "ELK Stack, Grafana, oVirt"],
               [<><SiLinux className="text-purple-400" /> Linux, <SiVmware className="text-purple-400" /> VMware, IT Operations</>],
             ].map(([icon, text], index) => (
-              <div
-                key={index}
-                className="flex items-start gap-3 hover:scale-[1.02] hover:text-indigo-300 transition-transform duration-200 ease-in-out cursor-default px-2 py-1 rounded-md"
-              >
+              <div key={index} className="flex items-start gap-3 hover:scale-[1.02] transition-transform duration-200 ease-in-out cursor-default px-2 py-1 rounded-md">
                 {icon}
-                <span className="break-words">{text}</span>
+                <span className="text-white">{text}</span>
               </div>
             ))}
           </div>
