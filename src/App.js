@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./index.css";
 import {
@@ -32,7 +33,7 @@ function App() {
           <img
             src="/profile.jpg"
             alt="Ikmal Shafiq"
-            className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mb-4 border-4 border-indigo-500 shadow-lg hover:shadow-indigo-500/50 transition-all duration-300 object-cover"
+            className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mb-4 border-4 border-white-500 shadow-lg hover:shadow-white-500/50 transition-all duration-300 object-cover"
           />
           <h2 className="text-2xl font-semibold mb-1">Ikmal Shafiq</h2>
           <p className="text-gray-400 mb-2">DevOps Consultant</p>
@@ -66,7 +67,7 @@ function App() {
 
         {/* Projects */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4 text-indigo-300 text-center sm:text-left">Projects</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white-300 text-center sm:text-left">Projects</h2>
           <div className="text-left text-gray-300 space-y-6">
             <div className="hover:scale-[1.02] transition transform duration-300 ease-in-out">
               <strong className="flex items-center gap-2">
@@ -82,7 +83,7 @@ function App() {
 
         {/* Experience */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-indigo-300 mb-4 text-center sm:text-left">Experience</h2>
+          <h2 className="text-2xl font-semibold text-white-300 mb-4 text-center sm:text-left">Experience</h2>
           <div className="text-left text-gray-300 space-y-6 max-w-xl text-sm sm:text-base">
           {[
               {
