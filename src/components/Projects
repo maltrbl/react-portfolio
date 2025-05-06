@@ -1,0 +1,20 @@
+function Projects() {
+  return (
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-2">Projects</h2>
+      <div className="text-gray-300">
+        <p className="mb-2">
+          <strong>CI/CD Pipeline Automation:</strong> Designed and deployed a complete CI/CD pipeline using Jenkins, Docker, and GitHub Actions.
+        </p>
+        <p className="mb-2">
+          <strong>Kubernetes Cluster Setup:</strong> Built a production-grade Kubernetes cluster using AWS EKS, Helm, and Terraform for enterprise apps.
+        </p>
+        <p>
+          <strong>Leave Request Agent:</strong> Built an n8n + Streamlit workflow for automating employee leave approval integrated with Google Sheets.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export default Projects;
