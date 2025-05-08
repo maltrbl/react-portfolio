@@ -67,6 +67,18 @@ function App() {
               </p>
             </div>
           </div>
+          <div className="hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+          <strong className="flex items-center gap-2 text-white">
+            <FaBasketballBall className="text-purple-400" /> NBA Match Simulator
+          </strong>
+          <p className="text-sm mt-1">
+            • A Flask-based web app that simulates NBA matchups and best-of-7 series with emoji-based highlights.<br />
+            • Hosted on AWS EC2 and served via NGINX reverse proxy on port 80.<br />
+            • Mobile-friendly UI, team picker, and real-time result display.<br />
+            • <a href="http://54.79.168.37" target="_blank" rel="noopener noreferrer" className="text-purple-400 underline">Live Demo</a>
+          </p>
+    </div>
+
         </section>
 
         {/* Experience */}
